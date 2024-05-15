@@ -35,11 +35,5 @@ services:
       net:
     restart: on-failure
 
-  my-react-app:
-    container_name: my-react-app
-    build: ./frontend
-    ports:
-      - "3000:3000"
-
 networks:
   net:
