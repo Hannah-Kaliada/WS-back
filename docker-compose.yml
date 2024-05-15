@@ -6,15 +6,15 @@ services:
     container_name: db
     image: postgres
     environment:
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=postgres
-      - POSTGRES_DB=wiki_db
+      - POSTGRES_USER=hannaratte
+      - POSTGRES_PASSWORD=Vqms016ntwrcvHw0OL08gn7o381spW4N
+      - POSTGRES_DB=wiki_db_k9sk
     ports:
-        - "5432:5432"
+      - "5432:5432"
     volumes:
       - ./postgres_data:/var/lib/postgresql/data
     networks:
-      net:
+      - net
 
   backend:
     container_name: backend
@@ -27,13 +27,14 @@ services:
       - db
     environment:
       - spring.jpa.hibernate.ddl-auto=update
-      - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/wiki_db
-      - spring.datasource.username=postgres
-      - spring.datasource.password=postgres
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/wiki_db_k9sk
+      - spring.datasource.username=hannaratte
+      - spring.datasource.password=Vqms016ntwrcvHw0OL08gn7o381spW4N
       - spring.datasource.driver-class-name=org.postgresql.Driver
     networks:
-      net:
+      - net
     restart: on-failure
 
 networks:
   net:
+    name: dpg-cosgp521hbls73fkqiug-a

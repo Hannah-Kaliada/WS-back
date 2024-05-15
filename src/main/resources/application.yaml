@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url: jdbc:postgresql://db:5432/wiki_db
-    username: postgres
-    password: postgres
+    url: jdbc:postgresql://db:5432/wiki_db_k9sk
+    username: hannaratte
+    password: Vqms016ntwrcvHw0OL08gn7o381spW4N
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
