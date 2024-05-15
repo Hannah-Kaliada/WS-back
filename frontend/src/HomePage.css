@@ -1,0 +1,222 @@
+body {
+    display: flex;
+    justify-content: flex-start;
+    height: 100vh;
+    flex-direction: column;
+}
+
+#header {
+    background: linear-gradient(to right, rgba(200, 200, 200, 0.1), rgba(180, 180, 180, 1));
+    width: 100%;
+    padding: 20px;
+    position: relative;
+    font-size: 2em;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    margin: 20px 0;
+
+}
+
+#header h1 {
+    text-align: left;
+    display: inline;
+    padding-left: 120px;
+    font-family: 'Rubik', sans-serif;
+    justify-content: space-between;
+}
+
+#wiki-logo {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100px;
+    height: auto;
+}
+
+hr {
+    margin: 0;
+}
+
+#searchBox {
+    background-color: #ececec;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+}
+
+#searchForm {
+    display: flex;
+    flex: 1;
+
+}
+
+label {
+    font-weight: bold;
+
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+
+input[type="button"] {
+    padding: 8px 20px;
+    background-color: #808080;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="button"]:hover {
+    background-color: #0056b3;
+}
+
+.articles {
+    max-width: 100%;
+    margin: 20px 40px;
+}
+
+.article {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.article-image {
+    width: 150px;
+    height: 75px;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.article-content {
+    text-align: left;
+}
+
+.article-title {
+    color: #111111;
+    font-size: 24px;
+    font-family: 'Rubik', sans-serif;
+    margin-bottom: 10px;
+}
+
+.article-title a {
+    color: #111111;
+    text-decoration: none;
+}
+
+.article-title a:hover {
+    text-decoration: underline;
+}
+
+#menu-button {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url('https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Wikipedia-logo-v2.svg/1200px-Wikipedia-logo-v2.svg.png');
+    background-size: contain;
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    border: none;
+    background-repeat: no-repeat;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#login-signup {
+    display: flex;
+    align-items: center;
+}
+
+#login-signup a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: #333;
+    font-size: smaller;
+    background-color: #f7f7f7;
+    border-radius: 3px;
+}
+
+#login-signup a:hover {
+    color: #007bff;
+}
+
+.profile-button {
+    margin-left: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.ReactModal__Overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ReactModal__Content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    max-width: 80%;
+    max-height: 80%;
+    overflow-y: auto;
+    margin: auto;
+}
+
+.ReactModal__Content button {
+    width: auto;
+    padding: 10px;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.ReactModal__Content button:hover {
+    background-color: #444444;
+}
+
+#footer {
+    text-align: center;
+    color: #333333;
+    font-family: 'Rubik', sans-serif;
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 20px 0;
+}
+
+#footer a {
+    text-decoration: none;
+    color: #333333;
+}
